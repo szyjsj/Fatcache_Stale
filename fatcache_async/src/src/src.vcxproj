@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\eblaze-ioctl.h" />
+    <ClInclude Include="..\fc_array.h" />
+    <ClInclude Include="..\fc_client.h" />
+    <ClInclude Include="..\fc_connection.h" />
+    <ClInclude Include="..\fc_core.h" />
+    <ClInclude Include="..\fc_event.h" />
+    <ClInclude Include="..\fc_item.h" />
+    <ClInclude Include="..\fc_itemx.h" />
+    <ClInclude Include="..\fc_log.h" />
+    <ClInclude Include="..\fc_mbuf.h" />
+    <ClInclude Include="..\fc_memcache.h" />
+    <ClInclude Include="..\fc_message.h" />
+    <ClInclude Include="..\fc_queue.h" />
+    <ClInclude Include="..\fc_server.h" />
+    <ClInclude Include="..\fc_sha1.h" />
+    <ClInclude Include="..\fc_signal.h" />
+    <ClInclude Include="..\fc_slab.h" />
+    <ClInclude Include="..\fc_string.h" />
+    <ClInclude Include="..\fc_time.h" />
+    <ClInclude Include="..\fc_util.h" />
+    <ClInclude Include="..\myEblaze.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\fc_array.c" />
+    <ClCompile Include="..\fc_client.c" />
+    <ClCompile Include="..\fc_connection.c" />
+    <ClCompile Include="..\fc_core.c" />
+    <ClCompile Include="..\fc_event.c" />
+    <ClCompile Include="..\fc_item.c" />
+    <ClCompile Include="..\fc_itemx.c" />
+    <ClCompile Include="..\fc_log.c" />
+    <ClCompile Include="..\fc_mbuf.c" />
+    <ClCompile Include="..\fc_memcache.c" />
+    <ClCompile Include="..\fc_message.c" />
+    <ClCompile Include="..\fc_request.c" />
+    <ClCompile Include="..\fc_response.c" />
+    <ClCompile Include="..\fc_server.c" />
+    <ClCompile Include="..\fc_sha1.c" />
+    <ClCompile Include="..\fc_signal.c" />
+    <ClCompile Include="..\fc_slab.c" />
+    <ClCompile Include="..\fc_string.c" />
+    <ClCompile Include="..\fc_time.c" />
+    <ClCompile Include="..\fc_util.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B06FF7D9-C52D-4E3C-B4B5-24EDE8E8353A}</ProjectGuid>
+    <RootNamespace>src</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
